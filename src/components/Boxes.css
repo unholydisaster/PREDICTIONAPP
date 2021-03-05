@@ -1,0 +1,15 @@
+.boxes{
+    margin:10px;
+    margin-top:10px;
+    background-color:#008080;
+    overflow: hidden;
+    height: 180px;
+    max-height:35vh;
+    box-shadow: 6px 12px 18px -6px rgba(0,0,0,0.3);
+    border-radius: 10px 10px 10px 10px;
+}
+.grids{
+    max-width:50%;
+    margin:auto;
+    
+}
