@@ -16,7 +16,6 @@ export default class App extends React.Component{
       <Navbar1/>
       <Switch>
         <Route exact path='/' component={Container}/>
-        <Route exact path='/Football' component={Container}/>
         <Route exact path='/Icehockey'component={Icehockey}/>
         <Route exact path='/Contact'  component={Contact}/>
         <Route exact path='/Basketball' component={Basketball}/>

@@ -11,12 +11,6 @@ export const sidebarData=[
         cName:'nav-text'
     },
     {
-        title:'Football',
-        Path:'/Football',
-        icons:<FaIcons.FaFutbol/>,
-        cName:'nav-text'
-    },
-    {
         title:'Basketball',
         Path:'/Basketball',
         icons:<FaIcons.FaBasketballBall/>,

@@ -23,19 +23,21 @@ class Container extends React.Component{
     render(){
 return(
     <div className="content" >
-     {this.state.games.map((t,i)=>(
-        <div key={t.id} className="grids" style={{textAlign:"auto",color:"black",fontFamily:"helvetica"}}>
+    {this.state.games.map((t,i)=>(
+        <div  key={t.id} className="grids" style={{textAlign:"auto",color:"black",fontFamily:"helvetica"}}>
             <div data-aos="fade-up" className="boxes" >
-                <h4 style={{color:"black",textSizeAdjust:"inherit"}}>{t.league}</h4>
+                <h4 style={{color:"black",textSizeAdjust:"inherit"}} className="text">{t.league}</h4>
                 <hr/>
-              <h5 style={{color:"#f5fffa",textSizeAdjust:"inherit"}}>{t.hometeam}</h5>
-              <h5 style={{color:"#f5fffa",textSizeAdjust:"inherit"}}>{t.awayteam}</h5>
+              <h3 style={{color:"#f5fffa",textSizeAdjust:"inherit"}} className="text">{t.hometeam}</h3>
+              <h3 style={{color:"#f5fffa",textSizeAdjust:"inherit"}} className="text">{t.awayteam}</h3>
               <hr/>
-              <h4 style={{color:"black",textAlign:"auto"}}>{t.pick}</h4>
+              <h4 style={{color:"black",textAlign:"auto"}} className="text">{t.pick}</h4>
             </div>
         </div>
-     ))}</div>
+    ))}</div>
 )
 }
 }
 export default Container;
+
+

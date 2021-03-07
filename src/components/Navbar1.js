@@ -29,7 +29,7 @@ export default class Navbar1 extends React.Component{
               <Link to="#" className="menu-bars">
                  <FaIcons.FaBars onClick={this.showSidebar}/>
               </Link>
-              <h1 style={{fontFamily:"Pluto",color:"#004040",fontSize:"50px",display:"flex"}}>BetTips</h1>
+              <h1 style={{fontFamily:"Pluto",color:"#004040",fontSize:"60px"}}>BetTips</h1>
             </div>
             <nav className={sidebar ?'nav-menu active':'nav-menu'}>
                 <ul className='nav-menu-items' onClick={this.showSidebar} >
