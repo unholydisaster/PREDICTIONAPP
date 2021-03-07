@@ -5,6 +5,7 @@
     height:0px;
     justify-content: start;
     align-items: center;
+    text-align: end;
 }
 .navbar a:hover{
     background-color:#faf0e6;
