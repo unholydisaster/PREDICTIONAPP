@@ -81,7 +81,11 @@ span{
     height: 100px;
     position: absolute;
     left: 50%;
+    width: 300px;
+    height: 300px;
+    margin-left: -150px;
     content: "";
+
 }
 
 @media (max-width:1000px){
@@ -155,6 +159,9 @@ span{
         height: 100px;
         position: absolute;
         left: 50%;
+        width: 300px;
+        height: 300px;
+        margin-left: -150px;
         content: "";
 
     }
