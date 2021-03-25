@@ -79,8 +79,9 @@ span{
 }
 .image{
     height: 100px;
-        left: 50%;
-        content: "";
+    position: absolute;
+    left: 50%;
+    content: "";
 }
 
 @media (max-width:1000px){
@@ -94,7 +95,8 @@ span{
     .menu-bars{
         display:flex;
         flex-wrap: wrap;
-        margin-left:2rem;
+        position:absolute;
+        left: 95%;
         font-size: 6rem;
         background: none;
     }
@@ -151,6 +153,7 @@ span{
     }
     .image{
         height: 100px;
+        position: absolute;
         left: 50%;
         content: "";
 

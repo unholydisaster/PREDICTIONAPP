@@ -27,7 +27,7 @@ export default class Navbar1 extends React.Component{
             <div className="navbar">
             <h1 style={{fontFamily:"Pluto",color:"#004040",fontSize:"60px" ,textAlign:"end"}}>BetNinja</h1>
             <img className="image" src="/images/images (3).jfif" style={{backgroundColor:"white",left:"50%",content:""}} alt=""></img>
-              <Link to="#" className="menu-bars" style={{left:"90%"}} >
+              <Link to="#" className="menu-bars">
                  <FaIcons.FaBars onClick={this.showSidebar}/>
               </Link>
             </div>
