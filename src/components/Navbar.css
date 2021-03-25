@@ -77,9 +77,8 @@
 span{
     margin-left: 16px;
 }
-img{
+.image{
     height: 100px;
-    position: absolute;
         left: 50%;
         content: "";
 }
@@ -150,9 +149,8 @@ img{
     span{
         margin-left: 50px;
     }
-    img{
+    .image{
         height: 100px;
-        position: absolute;
         left: 50%;
         content: "";
 
