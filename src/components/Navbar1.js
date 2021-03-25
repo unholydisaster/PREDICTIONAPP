@@ -1,6 +1,5 @@
 import React from "react"
 import * as FaIcons from "react-icons/fa"
-import * as AiIcons from "react-icons/ai"
 import {Link} from "react-router-dom"
 import {sidebarData} from './SidebarData'
 import './Navbar.css'
@@ -26,16 +25,17 @@ export default class Navbar1 extends React.Component{
             <>
             <IconContext.Provider value={{color:'#008080'}}>
             <div className="navbar">
+            <h1 style={{fontFamily:"Pluto",color:"#004040",fontSize:"60px" ,textAlign:"end"}}>BetNinja</h1>
+            <img src="/images/images (3).jfif" style={{backgroundColor:"white"}} alt=""></img>
               <Link to="#" className="menu-bars">
                  <FaIcons.FaBars onClick={this.showSidebar}/>
               </Link>
-              <h1 style={{fontFamily:"Pluto",color:"#004040",fontSize:"60px"}}>BetTips</h1>
             </div>
             <nav className={sidebar ?'nav-menu active':'nav-menu'}>
                 <ul className='nav-menu-items' onClick={this.showSidebar} >
                     <li className="navbar-toggle">
                         <Link to="#" className='menu-bars'>
-                            <AiIcons.AiOutlineClose/>
+                        <img src="/images/images.png" style={{backgroundColor:"white"}} alt=""></img>
                         </Link>
                     </li>
                     {sidebarData.map((item,index)=>{

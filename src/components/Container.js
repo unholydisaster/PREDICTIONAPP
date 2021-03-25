@@ -23,6 +23,7 @@ class Container extends React.Component{
     render(){
 return(
     <div className="content" >
+        <h4 className="text">Todays Football Tips</h4>
     {this.state.games.map((t,i)=>(
         <div  key={t.id} className="grids" style={{textAlign:"auto",color:"black",fontFamily:"helvetica"}}>
             <div data-aos="fade-up" className="boxes" >
@@ -31,7 +32,7 @@ return(
               <h3 style={{color:"#f5fffa",textSizeAdjust:"inherit"}} className="text">{t.hometeam}</h3>
               <h3 style={{color:"#f5fffa",textSizeAdjust:"inherit"}} className="text">{t.awayteam}</h3>
               <hr/>
-              <h4 style={{color:"black",textAlign:"auto"}} className="text">{t.pick}</h4>
+              <h4 style={{color:"black"}} className="text">{t.pick}</h4>
             </div>
         </div>
     ))}</div>
@@ -39,5 +40,3 @@ return(
 }
 }
 export default Container;
-
-

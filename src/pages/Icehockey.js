@@ -13,7 +13,7 @@ class Icehockey extends React.Component{
    
     async componentDidMount(){
         Aos.init({duration:2000})
-        const response=await fetch('https://peaceful-refuge-71294.herokuapp.com/api/sports')
+        const response=await fetch('https://still-tundra-29783.herokuapp.com/api/sports')
         const data=await response.json()
         const item=data
         this.setState({
@@ -23,6 +23,7 @@ class Icehockey extends React.Component{
     render(){
 return(
     <div className="content" >
+        <h4 className="text">Todays Icehockey Tips</h4>
     {this.state.games.map((t,i)=>(
         <div  key={t.id} className="grids" style={{textAlign:"auto",color:"black",fontFamily:"helvetica"}}>
             <div data-aos="fade-up" className="boxes" >
