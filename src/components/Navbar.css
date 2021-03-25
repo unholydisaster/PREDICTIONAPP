@@ -79,6 +79,9 @@ span{
 }
 img{
     height: 100px;
+    position: absolute;
+        left: 50%;
+        content: "";
 }
 
 @media (max-width:1000px){
@@ -149,5 +152,9 @@ img{
     }
     img{
         height: 100px;
+        position: absolute;
+        left: 50%;
+        content: "";
+
     }
 }
