@@ -16,8 +16,8 @@
 .footer{
   background:#2f4f4f ;
   color: white;
-  padding: 1em;
-  margin-top:auto;
+  padding: 2em;
+  margin-top: auto;
 }
 .upfooter{
   background:white ;
@@ -31,7 +31,13 @@
 
 }
 @media (max-width:1000px){
-
+  .home, .football, .basketball{
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 6rem; 
+  }
   .footer{
     background:#2f4f4f ;
     color:white;
