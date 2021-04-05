@@ -6,7 +6,7 @@ export default class Upfooter extends React.Component{
         return(
             <>
             <div className="upfooter">
-                <hr/>
+                <hr style={{color:"#008080",borderTop:'3px solid',width:'100%',margin:'-10px'}} />
             <br/>
             <br/>
             <h4 className="text">BetNinja offers daily free Football,Basketball,Icehockey Betting Tips </h4>

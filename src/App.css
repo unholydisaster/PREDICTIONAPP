@@ -17,7 +17,8 @@
   background:#2f4f4f ;
   color: white;
   padding: 2em;
-  margin-top: auto;
+  margin-top: 100vh;
+
 }
 .upfooter{
   background:white ;
@@ -27,7 +28,7 @@
 }
 .text{
   text-align:start;
-  font-size: 25px;
+  font-size: 20px;
 
 }
 @media (max-width:1000px){
@@ -42,7 +43,7 @@
     background:#2f4f4f ;
     color:white;
     padding: 2em;
-    margin-top: auto;
+    margin-top: 100%;
   }
   .upfooter{
     background:white ;

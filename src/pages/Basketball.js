@@ -40,5 +40,3 @@ return(
 }
 }
 export default Basketball;
-
-

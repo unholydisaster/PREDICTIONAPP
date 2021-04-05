@@ -25,8 +25,8 @@ export default class Navbar1 extends React.Component{
             <>
             <IconContext.Provider value={{color:'#008080'}}>
             <div className="navbar">
-            <h1 className="txt" style={{fontFamily:"Pluto",color:"#004040"}}>BetNinja</h1>
-            <img className="image" src="/images/images (3).jfif" style={{backgroundColor:"white",left:"50%",content:""}} alt=""></img>
+              <h1 className="txt" style={{fontFamily:"Pluto",color:"#004040"}}>BetNinja</h1>
+              <img className="image" src="/images/images (3).jfif" style={{backgroundColor:"white",left:"50%",content:""}} alt=""></img>
               <Link to="#" className="menu-bars">
                  <FaIcons.FaBars onClick={this.showSidebar}/>
               </Link>
@@ -35,7 +35,7 @@ export default class Navbar1 extends React.Component{
                 <ul className='nav-menu-items' onClick={this.showSidebar} >
                     <li className="navbar-toggle">
                         <Link to="#" className='imgs'>
-                        <img  src="/images/images.png" style={{backgroundColor:"white"}} alt=""></img>
+                        <img  src="/images/images (2).jpg" style={{backgroundColor:"white"}} alt=""></img>
                         </Link>
                     </li>
                     {sidebarData.map((item,index)=>{
