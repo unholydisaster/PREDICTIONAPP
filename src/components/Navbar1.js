@@ -34,8 +34,8 @@ export default class Navbar1 extends React.Component{
             <nav className={sidebar ?'nav-menu active':'nav-menu'}>
                 <ul className='nav-menu-items' onClick={this.showSidebar} >
                     <li className="navbar-toggle">
-                        <Link to="#" className='imgs'>
-                        <img  src="/images/images (2).jpg" style={{backgroundColor:"white"}} alt=""></img>
+                        <Link >
+                        <img className='imgs' src="/images/images (2).jpg" style={{backgroundColor:"white"}} alt=""></img>
                         </Link>
                     </li>
                     {sidebarData.map((item,index)=>{

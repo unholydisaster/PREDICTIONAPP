@@ -8,12 +8,15 @@
 }
 .home, .football, .basketball{
   display: flex;
+        flex-wrap: wrap;
   height: 90vh;
   align-items: center;
   justify-content: center;
   font-size: 3rem; 
 }
 .footer{
+  display:flex;
+        flex-wrap: wrap;
   background:#2f4f4f ;
   color: white;
   padding: 2em;
@@ -21,12 +24,16 @@
 
 }
 .upfooter{
+  display:flex;
+        flex-wrap: wrap;
   background:white ;
   color: #333;
   padding: 2em;
   margin-top:70px;
 }
 .text{
+  display:flex;
+        flex-wrap: wrap;
   text-align:start;
   font-size: 20px;
 
