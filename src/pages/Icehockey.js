@@ -10,20 +10,10 @@ class Icehockey extends React.Component{
            games:[]
            
             }
-       this.updateClick=this.updateClick.bind(this)
-       
-       this.handleUpdate=this.handleUpdate.bind(this)
-       
-
-    }
-    
-    handleUpdate(e){
-        if(e){
-            return +1
-        }
        
     }
-      
+   
+    /*fetch api*/
    
     async componentDidMount(){
         
@@ -40,7 +30,7 @@ class Icehockey extends React.Component{
     
     /*handle update for H*/ 
 
-    updateClick(_id,hometeam,awayteam,league,pick,H,D,A){
+    updateClick=(_id,hometeam,awayteam,league,pick,H,D,A)=>{
         fetch(`https://still-tundra-29783.herokuapp.com/api/sports/${_id}`,{
             method:'PUT',
             headers:{
@@ -50,15 +40,47 @@ class Icehockey extends React.Component{
             body:JSON.stringify({_id,hometeam,awayteam,pick,league,H,D,A})
         })
         .then(()=>{
-            let updatedGames=[...this.state.games].map(i=> i._id ===_id ?{...i,H,D,A}:i);
+            let updatedGames=[...this.state.games].map(i=> i._id ===_id ?{...i,H:H+1}:i);
             this.setState({
                 games:updatedGames
             });
         });
     }
      /*handle update for D*/ 
- 
-
+     updateClik=(_id,hometeam,awayteam,league,pick,H,D,A)=>{
+        fetch(`https://still-tundra-29783.herokuapp.com/api/sports/${_id}`,{
+            method:'PUT',
+            headers:{
+                'Accept':'application/json',
+                'Content-Type':'application/json'
+            },
+            body:JSON.stringify({_id,hometeam,awayteam,pick,league,H,D,A})
+        })
+        .then(()=>{
+            let updatedGames=[...this.state.games].map(i=> i._id ===_id ?{...i,D:D+1}:i);
+            this.setState({
+                games:updatedGames
+            });
+        });
+    }
+      
+    /*handle A update*/
+    updateClk=(_id,hometeam,awayteam,league,pick,H,D,A)=>{
+        fetch(`https://still-tundra-29783.herokuapp.com/api/sports/${_id}`,{
+            method:'PUT',
+            headers:{
+                'Accept':'application/json',
+                'Content-Type':'application/json'
+            },
+            body:JSON.stringify({_id,hometeam,awayteam,pick,league,H,D,A})
+        })
+        .then(()=>{
+            let updatedGames=[...this.state.games].map(i=> i._id ===_id ?{...i,A:A+1}:i);
+            this.setState({
+                games:updatedGames
+            });
+        });
+    }
         
 
 
@@ -76,9 +98,9 @@ return(
               <h3 style={{color:"#f5fffa",textSizeAdjust:"inherit"}} className="text">{t.awayteam}</h3>
               <hr/>
               <div className='main'>
-              <h4 style={{color:"black"}} className="tect">{t.pick }<button className="shap"onClick={()=>this.updateClick(t._id, t.league, t.hometeam, t.awayteam, t.pick, t.D, t.A, this.handleUpdate(t.H))}>H</button>
-              <button className="shape" onClick={()=>this.updateClick(t._id,t.league,t.hometeam,t.awayteam,t.pick,t.D,t.H, this.handleUpdate(t.A))} >A</button>
-              <button className="shep" onClick={()=>this.updateClick(t._id,t.league,t.hometeam,t.awayteam,t.pick,t.H,t.A, this.handleUpdate(t.D))} >D</button>
+              <h4 style={{color:"black"}} className="tect">{t.pick }<button className="shap"onClick={()=>this.updateClick(t._id, t.league, t.hometeam, t.awayteam, t.pick, t.H,t.D, t.A,)}>H</button>
+              <button className="shape" onClick={()=>this.updateClk(t._id,t.league,t.hometeam,t.awayteam,t.pick,t.A,t.D,t.D)} >A</button>
+              <button className="shep" onClick={()=>this.updateClik(t._id,t.league,t.hometeam,t.awayteam,t.pick,t.H,t.D,t.A)} >D</button>
               </h4>
               <h3 className='h32'>{t.A}</h3>
               <h3 className='h31'>{t.H}</h3>
